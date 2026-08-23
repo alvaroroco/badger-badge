@@ -69,10 +69,15 @@ def draw_badge():
     display.set_pen(15)
     display.text("STATUS", 14, 112, WIDTH, 1)
     display.set_pen(0)
-    display.text("works on my machine", 78, 112, WIDTH, 1)
+    display.text("Coffee-driven development", 78, 112, WIDTH, 1)
 
     # One e-ink refresh: the image remains after USB power is removed.
     display.update()
+
+    # Keep the static image active when launched from Badger OS.
+    while True:
+        display.keepalive()
+        display.halt()
 
 
 draw_badge()

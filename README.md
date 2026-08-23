@@ -16,7 +16,7 @@ The program draws once and calls `display.update()` exactly once. Its graphical 
 │ Coffee   ■■■■■■■■■■                 │
 │ Social   ■■■□□□□□□□                 │
 │                                    │
-│ STATUS  works on my machine        │
+│ STATUS  Coffee-driven development  │
 └────────────────────────────────────┘
 ```
 
@@ -33,4 +33,4 @@ The actual bars are ten individual outlined or filled graphical segments. The `�
 
 ## Files
 
-- `main.py` — the complete badge; no Wi-Fi, Bluetooth, button handling, animation, or periodic updates.
+- `main.py` — the complete badge; no Wi-Fi, Bluetooth, button handling, animation, or periodic updates. The status is powered by CDD: Coffee-Driven Development.
