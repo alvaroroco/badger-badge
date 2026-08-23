@@ -4,7 +4,7 @@ WIDTH = 296
 HEIGHT = 128
 
 # The built-in bitmap font is reliably ASCII-only. The accent is drawn as a
-# small line so the rendered heading still reads “ÁLVARO”.
+# small line so the heading renders ALVARO with an accent.
 NAME = "ALVARO"
 ROLE = "Software Developer"
 COMMUNITY = "Python Navarra member"
@@ -49,7 +49,7 @@ def draw_badge():
     display.rectangle(8, 5, 168, 30)
     display.set_pen(15)
     display.text(NAME, 13, 8, WIDTH, 3)
-    display.line(26, 5, 31, 1)  # Accent over the initial A: ÁLVARO.
+    display.line(26, 5, 31, 1)  # Accent over the initial A.
 
     display.set_pen(0)
     display.set_font("bitmap6")
